@@ -2,7 +2,7 @@
 //  MeuAptTests.swift
 //  MeuAptTests
 //
-//  Created by mac mini capgemini sp on 13/11/17.
+//  Created by Eduardo Domene Junior on 13/11/17.
 //  Copyright © 2017 Domene. All rights reserved.
 //
 
