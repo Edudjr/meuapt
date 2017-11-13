@@ -31,20 +31,25 @@ class Dribble{
         return error
     }
     
-    public func getShots(page: Int, completion: @escaping(CustomError?, String?)->Void){
+    public func getShots(page: Int, completion: @escaping(CustomError?, [ShotModel]?)->Void){
         let path = "/shots?page=\(page)&per_page=\(perPage)&access_token=\(accessToken)"
         let url = baseUrl+path
+        var shotsArray = [ShotModel]()
         
         Alamofire.request(url).responseJSON { response in
             print("\nRequest: \(String(describing: response.request))")   // original url request
             
             if let error = self.handleError(response.response?.statusCode){
-                print("\nDebug: \(String(describing: response.response))")
+                Logging.print(String(describing: response.response))
                 completion(error, nil)
             }
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
-                return completion(nil, "json")
+            
+            if let jsonArray = response.result.value as? [[String:Any]]{
+                for item in jsonArray{
+                    let shot = ShotModel(object: item)
+                    shotsArray.append(shot)
+                }
+                completion(nil, shotsArray)
             }
         }
         

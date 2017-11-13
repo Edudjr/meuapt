@@ -11,6 +11,7 @@ public enum CustomError: Error {
     case notFound
     case serverError
     case undefined
+    case jsonParse
 }
 
 extension CustomError: LocalizedError {
@@ -22,6 +23,8 @@ extension CustomError: LocalizedError {
             return NSLocalizedString("Servidor indisponível. Tente novamente", comment: "Servidor indisponível")
         case .undefined:
             return NSLocalizedString("Ocorreu um erro inesperado", comment: "Erro inesperado")
+        case .jsonParse:
+            return NSLocalizedString("Não foi possível converter JSON", comment: "Erro inesperado")
         }
     }
 }
