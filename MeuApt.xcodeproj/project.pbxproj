@@ -26,6 +26,8 @@
 		51683C9B1FBA844E00C6B901 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51683C981FBA844E00C6B901 /* CustomTableViewCell.swift */; };
 		51683C9C1FBA844E00C6B901 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51683C991FBA844E00C6B901 /* CustomTableViewCell.xib */; };
 		51683C9D1FBA844E00C6B901 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51683C991FBA844E00C6B901 /* CustomTableViewCell.xib */; };
+		51683CA01FBA92B600C6B901 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51683C9F1FBA92B600C6B901 /* Date+Extension.swift */; };
+		51683CA11FBA92B600C6B901 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51683C9F1FBA92B600C6B901 /* Date+Extension.swift */; };
 		BD8D4F9B04A8B6D0E185A787 /* Pods_MeuApt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FBCF10626D1BFDE135CB55 /* Pods_MeuApt.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,7 @@
 		51606A431FB96E63002CA575 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		51683C981FBA844E00C6B901 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		51683C991FBA844E00C6B901 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		51683C9F1FBA92B600C6B901 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		55397C010D11759F1DA07FBC /* Pods-MeuApt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuApt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeuApt/Pods-MeuApt.debug.xcconfig"; sourceTree = "<group>"; };
 		5E62B6CF79205F3B62EFAD64 /* Pods-MeuApt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuApt.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeuApt/Pods-MeuApt.release.xcconfig"; sourceTree = "<group>"; };
 		81C4EA1E6813FB33FA2D1EDE /* Pods_MeuAptTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeuAptTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +110,7 @@
 		51606A131FB94174002CA575 /* MeuApt */ = {
 			isa = PBXGroup;
 			children = (
+				51683C9E1FBA929E00C6B901 /* Extensions */,
 				51683C971FBA841100C6B901 /* Views */,
 				51606A3F1FB967C9002CA575 /* Models */,
 				51606A3B1FB95762002CA575 /* Helpers */,
@@ -170,6 +174,14 @@
 				51683C991FBA844E00C6B901 /* CustomTableViewCell.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		51683C9E1FBA929E00C6B901 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				51683C9F1FBA92B600C6B901 /* Date+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		557530F3A618DFC2ACA06C17 /* Pods */ = {
@@ -412,6 +424,7 @@
 				51606A3D1FB95789002CA575 /* CustomError.swift in Sources */,
 				51683C9A1FBA844E00C6B901 /* CustomTableViewCell.swift in Sources */,
 				51606A361FB946D7002CA575 /* MainViewController.swift in Sources */,
+				51683CA01FBA92B600C6B901 /* Date+Extension.swift in Sources */,
 				51606A151FB94174002CA575 /* AppDelegate.swift in Sources */,
 				51606A411FB967FD002CA575 /* ShotModel.swift in Sources */,
 			);
@@ -425,6 +438,7 @@
 				51606A2A1FB94175002CA575 /* MeuAptTests.swift in Sources */,
 				51606A451FB96E63002CA575 /* Logging.swift in Sources */,
 				51606A421FB967FD002CA575 /* ShotModel.swift in Sources */,
+				51683CA11FBA92B600C6B901 /* Date+Extension.swift in Sources */,
 				51606A3A1FB94B8E002CA575 /* Dribbble.swift in Sources */,
 				51606A3E1FB95789002CA575 /* CustomError.swift in Sources */,
 			);

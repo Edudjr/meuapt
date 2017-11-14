@@ -17,7 +17,6 @@ class MainViewController: UIViewController {
         //Register cell
         let nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "CustomTableViewCellIdentifier")
-        
         // Do any additional setup after loading the view, typically from a nib.
         Dribble.sharedInstance.getShots(page: 0) { (error, response) in
             if let err = error{
@@ -43,7 +42,10 @@ extension MainViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCellIdentifier", for: indexPath) as! CustomTableViewCell
-        cell.title.text = shots[indexPath.row].title
+        let shot = shots[indexPath.row]
+        cell.title.text = shot.title
+        cell.count.text = "\(shot.viewsCount ?? 0)"
+        cell.createdAt.text = shot.createdAt?.toString
         return cell
     }
 }
