@@ -11,7 +11,7 @@ import Foundation
 public struct Logging{
     private init(){}
     
-    static func print(_ str: String)->Void{
-        print("\nDebug: \(str)")
+    static func debug(_ str: String)->Void{
+        print("\nDebug: \(str) \n")
     }
 }

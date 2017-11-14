@@ -37,10 +37,10 @@ class Dribble{
         var shotsArray = [ShotModel]()
         
         Alamofire.request(url).responseJSON { response in
-            print("\nRequest: \(String(describing: response.request))")   // original url request
+            print("\nRequest: \(String(describing: response.request))") 
             
             if let error = self.handleError(response.response?.statusCode){
-                Logging.print(String(describing: response.response))
+                Logging.debug(String(describing: response.response))
                 completion(error, nil)
             }
             
