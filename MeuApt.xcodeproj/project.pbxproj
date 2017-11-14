@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14FFD75070BC11CC661404CC /* Pods_MeuAptTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C4EA1E6813FB33FA2D1EDE /* Pods_MeuAptTests.framework */; };
 		51606A151FB94174002CA575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A141FB94174002CA575 /* AppDelegate.swift */; };
-		51606A171FB94174002CA575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A161FB94174002CA575 /* ViewController.swift */; };
 		51606A1A1FB94174002CA575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51606A181FB94174002CA575 /* Main.storyboard */; };
 		51606A1C1FB94174002CA575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51606A1B1FB94174002CA575 /* Assets.xcassets */; };
 		51606A1F1FB94174002CA575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51606A1D1FB94174002CA575 /* LaunchScreen.storyboard */; };
 		51606A2A1FB94175002CA575 /* MeuAptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A291FB94175002CA575 /* MeuAptTests.swift */; };
+		51606A361FB946D7002CA575 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A351FB946D7002CA575 /* MainViewController.swift */; };
+		51606A391FB94B8E002CA575 /* Dribbble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A381FB94B8E002CA575 /* Dribbble.swift */; };
+		51606A3A1FB94B8E002CA575 /* Dribbble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A381FB94B8E002CA575 /* Dribbble.swift */; };
+		51606A3D1FB95789002CA575 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A3C1FB95789002CA575 /* CustomError.swift */; };
+		51606A3E1FB95789002CA575 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A3C1FB95789002CA575 /* CustomError.swift */; };
+		51606A411FB967FD002CA575 /* ShotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A401FB967FD002CA575 /* ShotModel.swift */; };
+		51606A421FB967FD002CA575 /* ShotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A401FB967FD002CA575 /* ShotModel.swift */; };
+		51606A441FB96E63002CA575 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A431FB96E63002CA575 /* Logging.swift */; };
+		51606A451FB96E63002CA575 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51606A431FB96E63002CA575 /* Logging.swift */; };
+		BD8D4F9B04A8B6D0E185A787 /* Pods_MeuApt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FBCF10626D1BFDE135CB55 /* Pods_MeuApt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +38,6 @@
 /* Begin PBXFileReference section */
 		51606A111FB94174002CA575 /* MeuApt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeuApt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51606A141FB94174002CA575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51606A161FB94174002CA575 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		51606A191FB94174002CA575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51606A1B1FB94174002CA575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51606A1E1FB94174002CA575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +45,17 @@
 		51606A251FB94175002CA575 /* MeuAptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeuAptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51606A291FB94175002CA575 /* MeuAptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuAptTests.swift; sourceTree = "<group>"; };
 		51606A2B1FB94175002CA575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51606A351FB946D7002CA575 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		51606A381FB94B8E002CA575 /* Dribbble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dribbble.swift; sourceTree = "<group>"; };
+		51606A3C1FB95789002CA575 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		51606A401FB967FD002CA575 /* ShotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotModel.swift; sourceTree = "<group>"; };
+		51606A431FB96E63002CA575 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		55397C010D11759F1DA07FBC /* Pods-MeuApt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuApt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeuApt/Pods-MeuApt.debug.xcconfig"; sourceTree = "<group>"; };
+		5E62B6CF79205F3B62EFAD64 /* Pods-MeuApt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuApt.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeuApt/Pods-MeuApt.release.xcconfig"; sourceTree = "<group>"; };
+		81C4EA1E6813FB33FA2D1EDE /* Pods_MeuAptTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeuAptTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACB81D245A700428F441FB8 /* Pods-MeuAptTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuAptTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeuAptTests/Pods-MeuAptTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7FBCF10626D1BFDE135CB55 /* Pods_MeuApt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeuApt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E567BA4B91BCFBE72189A81F /* Pods-MeuAptTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuAptTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeuAptTests/Pods-MeuAptTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8D4F9B04A8B6D0E185A787 /* Pods_MeuApt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14FFD75070BC11CC661404CC /* Pods_MeuAptTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +84,8 @@
 				51606A131FB94174002CA575 /* MeuApt */,
 				51606A281FB94175002CA575 /* MeuAptTests */,
 				51606A121FB94174002CA575 /* Products */,
+				557530F3A618DFC2ACA06C17 /* Pods */,
+				6F736421CF5BFCFDA630A0E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +101,11 @@
 		51606A131FB94174002CA575 /* MeuApt */ = {
 			isa = PBXGroup;
 			children = (
+				51606A3F1FB967C9002CA575 /* Models */,
+				51606A3B1FB95762002CA575 /* Helpers */,
+				51606A371FB94AF4002CA575 /* Stores */,
+				51606A341FB946AC002CA575 /* Controllers */,
 				51606A141FB94174002CA575 /* AppDelegate.swift */,
-				51606A161FB94174002CA575 /* ViewController.swift */,
 				51606A181FB94174002CA575 /* Main.storyboard */,
 				51606A1B1FB94174002CA575 /* Assets.xcassets */,
 				51606A1D1FB94174002CA575 /* LaunchScreen.storyboard */,
@@ -96,6 +123,59 @@
 			path = MeuAptTests;
 			sourceTree = "<group>";
 		};
+		51606A341FB946AC002CA575 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51606A351FB946D7002CA575 /* MainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		51606A371FB94AF4002CA575 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				51606A381FB94B8E002CA575 /* Dribbble.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		51606A3B1FB95762002CA575 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				51606A3C1FB95789002CA575 /* CustomError.swift */,
+				51606A431FB96E63002CA575 /* Logging.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		51606A3F1FB967C9002CA575 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				51606A401FB967FD002CA575 /* ShotModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		557530F3A618DFC2ACA06C17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55397C010D11759F1DA07FBC /* Pods-MeuApt.debug.xcconfig */,
+				5E62B6CF79205F3B62EFAD64 /* Pods-MeuApt.release.xcconfig */,
+				AACB81D245A700428F441FB8 /* Pods-MeuAptTests.debug.xcconfig */,
+				E567BA4B91BCFBE72189A81F /* Pods-MeuAptTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F736421CF5BFCFDA630A0E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7FBCF10626D1BFDE135CB55 /* Pods_MeuApt.framework */,
+				81C4EA1E6813FB33FA2D1EDE /* Pods_MeuAptTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51606A2E1FB94175002CA575 /* Build configuration list for PBXNativeTarget "MeuApt" */;
 			buildPhases = (
+				4689722F9F444648A842EA10 /* [CP] Check Pods Manifest.lock */,
 				51606A0D1FB94174002CA575 /* Sources */,
 				51606A0E1FB94174002CA575 /* Frameworks */,
 				51606A0F1FB94174002CA575 /* Resources */,
+				A02E667B41C29844B9B94CAB /* [CP] Embed Pods Frameworks */,
+				110196CD9D53AE25D77BB016 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51606A311FB94175002CA575 /* Build configuration list for PBXNativeTarget "MeuAptTests" */;
 			buildPhases = (
+				87FEEFBFA55E35D37A6DB1CE /* [CP] Check Pods Manifest.lock */,
 				51606A211FB94175002CA575 /* Sources */,
 				51606A221FB94175002CA575 /* Frameworks */,
 				51606A231FB94175002CA575 /* Resources */,
+				AA5748EDD9FBA67FE48C6611 /* [CP] Embed Pods Frameworks */,
+				FC5C361EB8F034C2447D9139 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,13 +280,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		110196CD9D53AE25D77BB016 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeuApt/Pods-MeuApt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4689722F9F444648A842EA10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeuApt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87FEEFBFA55E35D37A6DB1CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeuAptTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A02E667B41C29844B9B94CAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MeuApt/Pods-MeuApt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Marshal/Marshal.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Marshal.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeuApt/Pods-MeuApt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA5748EDD9FBA67FE48C6611 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeuAptTests/Pods-MeuAptTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC5C361EB8F034C2447D9139 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeuAptTests/Pods-MeuAptTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51606A0D1FB94174002CA575 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51606A171FB94174002CA575 /* ViewController.swift in Sources */,
+				51606A391FB94B8E002CA575 /* Dribbble.swift in Sources */,
+				51606A441FB96E63002CA575 /* Logging.swift in Sources */,
+				51606A3D1FB95789002CA575 /* CustomError.swift in Sources */,
+				51606A361FB946D7002CA575 /* MainViewController.swift in Sources */,
 				51606A151FB94174002CA575 /* AppDelegate.swift in Sources */,
+				51606A411FB967FD002CA575 /* ShotModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +403,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				51606A2A1FB94175002CA575 /* MeuAptTests.swift in Sources */,
+				51606A451FB96E63002CA575 /* Logging.swift in Sources */,
+				51606A421FB967FD002CA575 /* ShotModel.swift in Sources */,
+				51606A3A1FB94B8E002CA575 /* Dribbble.swift in Sources */,
+				51606A3E1FB95789002CA575 /* CustomError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,10 +549,12 @@
 		};
 		51606A2F1FB94175002CA575 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55397C010D11759F1DA07FBC /* Pods-MeuApt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MeuApt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.domene.MeuApt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -365,10 +565,12 @@
 		};
 		51606A301FB94175002CA575 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E62B6CF79205F3B62EFAD64 /* Pods-MeuApt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MeuApt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.domene.MeuApt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +581,7 @@
 		};
 		51606A321FB94175002CA575 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AACB81D245A700428F441FB8 /* Pods-MeuAptTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -395,6 +598,7 @@
 		};
 		51606A331FB94175002CA575 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E567BA4B91BCFBE72189A81F /* Pods-MeuAptTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
