@@ -101,7 +101,7 @@ extension MainViewController: UITableViewDataSource{
         cell.title.text = shot.title
         cell.count.text = "\(shot.viewsCount ?? 0)"
         cell.createdAt.text = shot.createdAt?.toString
-        let url = URL(string: shot.image ?? "")
+        let url = URL(string: shot.imageTeaser  ?? "")
         cell.imgView.kf.setImage(with: url)
         return cell
     }

@@ -11,8 +11,10 @@ import UIKit
 import Kingfisher
 
 class ShotDetailsViewController: UIViewController{
-    @IBOutlet weak var imageContainerHeight: NSLayoutConstraint!
-    @IBOutlet weak var imageContainer: UIView!
+
+    @IBOutlet weak var imageWidth: NSLayoutConstraint!
+    @IBOutlet weak var imageHeight: NSLayoutConstraint!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -37,13 +39,14 @@ class ShotDetailsViewController: UIViewController{
         
         titleLabel.text = shot.title
         descriptionLabel.text = desc ?? ""
-        commentsCountLabel.text = "\(String(describing: shot.commentsCount))"
-        viewCountLabel.text = "\(String(describing: shot.viewsCount))"
+        commentsCountLabel.text = "\(String(describing: shot.commentsCount ?? 0))"
+        viewCountLabel.text = "\(String(describing: shot.viewsCount ?? 0))"
         createdAtLabel.text = shot.createdAt?.toString
-        let url = URL(string: shot.image ?? "")
+        let url = URL(string: shot.imageNormal ?? "")
         self.imgView.kf.setImage(with: url) { (image, error, chacheType, url) in
-            self.imageContainerHeight.constant = image!.size.height
+            let percentage = 100 - (image?.size.width)!*100/self.view.frame.width
+            let newHeight = (image?.size.height)!*(percentage/100 + 1)
+            self.imageHeight.constant = newHeight
         }
-        self.imageContainer.setNeedsLayout()
     }
 }
