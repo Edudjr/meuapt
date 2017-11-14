@@ -11,6 +11,7 @@ import Kingfisher
 
 class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    private let refreshControl = UIRefreshControl()
     var shots = [ShotModel]()
     
     override func viewDidLoad() {
@@ -18,13 +19,28 @@ class MainViewController: UIViewController {
         //Register cell
         let nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "CustomTableViewCellIdentifier")
+        tableView.separatorStyle = .none
+        tableView.alpha = 0
+        
+        //Navigation Bar Settings
+        self.navigationController?.navigationBar.barStyle = .blackTranslucent
+        self.navigationController?.navigationBar.alpha = 0
+        
+        //Animations
+        fadeIn(view: self.navigationController?.navigationBar, duration: 1)
+        
+        //Pull to refresh
+        tableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(handlePullToRefresh(_:)), for: .valueChanged)
+        refreshControl.tintColor = UIColor.white
+        
         // Do any additional setup after loading the view, typically from a nib.
         Dribble.sharedInstance.getShots(page: 0) { (error, response) in
             if let err = error{
                 print("\(err.localizedDescription)")
             }else if let resp = response{
                 self.shots = resp
-                self.tableView.reloadData()
+                self.reloadAndFadeIn()
             }
         }
     }
@@ -32,6 +48,32 @@ class MainViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @objc private func handlePullToRefresh(_ refreshControl: UIRefreshControl){
+        // Do any additional setup after loading the view, typically from a nib.
+        Dribble.sharedInstance.getShots(page: 0) { (error, response) in
+            if let err = error{
+                print("\(err.localizedDescription)")
+            }else if let resp = response{
+                self.shots = resp
+                self.reloadAndFadeIn()
+                refreshControl.endRefreshing()
+            }
+        }
+    }
+    
+    private func reloadAndFadeIn(){
+        tableView.reloadData()
+        fadeIn(view: tableView, duration: 0.5)
+    }
+    
+    private func fadeIn(view: UIView?, duration: Double){
+        if let v = view {
+            UIView.animate(withDuration: duration, animations: {
+                v.alpha = 1
+            })
+        }
     }
 }
 
