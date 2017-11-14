@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -46,12 +47,14 @@ extension MainViewController: UITableViewDataSource{
         cell.title.text = shot.title
         cell.count.text = "\(shot.viewsCount ?? 0)"
         cell.createdAt.text = shot.createdAt?.toString
+        let url = URL(string: shot.image ?? "")
+        cell.imgView.kf.setImage(with: url)
         return cell
     }
 }
 
 //MARK: UITableViewDelegate
 extension MainViewController: UITableViewDelegate{
-    
+   
 }
 
