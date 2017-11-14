@@ -28,6 +28,8 @@
 		51683C9D1FBA844E00C6B901 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51683C991FBA844E00C6B901 /* CustomTableViewCell.xib */; };
 		51683CA01FBA92B600C6B901 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51683C9F1FBA92B600C6B901 /* Date+Extension.swift */; };
 		51683CA11FBA92B600C6B901 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51683C9F1FBA92B600C6B901 /* Date+Extension.swift */; };
+		51683CA31FBACD8A00C6B901 /* ShotDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51683CA21FBACD8A00C6B901 /* ShotDetailsViewController.swift */; };
+		51683CA41FBACD8A00C6B901 /* ShotDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51683CA21FBACD8A00C6B901 /* ShotDetailsViewController.swift */; };
 		BD8D4F9B04A8B6D0E185A787 /* Pods_MeuApt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FBCF10626D1BFDE135CB55 /* Pods_MeuApt.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,7 @@
 		51683C981FBA844E00C6B901 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		51683C991FBA844E00C6B901 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		51683C9F1FBA92B600C6B901 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		51683CA21FBACD8A00C6B901 /* ShotDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotDetailsViewController.swift; sourceTree = "<group>"; };
 		55397C010D11759F1DA07FBC /* Pods-MeuApt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuApt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeuApt/Pods-MeuApt.debug.xcconfig"; sourceTree = "<group>"; };
 		5E62B6CF79205F3B62EFAD64 /* Pods-MeuApt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeuApt.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeuApt/Pods-MeuApt.release.xcconfig"; sourceTree = "<group>"; };
 		81C4EA1E6813FB33FA2D1EDE /* Pods_MeuAptTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeuAptTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				51606A351FB946D7002CA575 /* MainViewController.swift */,
+				51683CA21FBACD8A00C6B901 /* ShotDetailsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -421,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51683CA31FBACD8A00C6B901 /* ShotDetailsViewController.swift in Sources */,
 				51606A391FB94B8E002CA575 /* Dribbble.swift in Sources */,
 				51606A441FB96E63002CA575 /* Logging.swift in Sources */,
 				51606A3D1FB95789002CA575 /* CustomError.swift in Sources */,
@@ -441,6 +446,7 @@
 				51606A451FB96E63002CA575 /* Logging.swift in Sources */,
 				51606A421FB967FD002CA575 /* ShotModel.swift in Sources */,
 				51683CA11FBA92B600C6B901 /* Date+Extension.swift in Sources */,
+				51683CA41FBACD8A00C6B901 /* ShotDetailsViewController.swift in Sources */,
 				51606A3A1FB94B8E002CA575 /* Dribbble.swift in Sources */,
 				51606A3E1FB95789002CA575 /* CustomError.swift in Sources */,
 			);

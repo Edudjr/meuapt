@@ -14,6 +14,7 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var count: UILabel!
     @IBOutlet weak var createdAt: UILabel!
+    public var id : Int!
     
     override func awakeFromNib() {
         super.awakeFromNib()

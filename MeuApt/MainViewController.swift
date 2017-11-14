@@ -35,7 +35,7 @@ class MainViewController: UIViewController {
         refreshControl.tintColor = UIColor.white
         
         // Do any additional setup after loading the view, typically from a nib.
-        Dribble.sharedInstance.getShots(page: 0) { (error, response) in
+        Dribbble.sharedInstance.getShots(page: 0) { (error, response) in
             if let err = error{
                 print("\(err.localizedDescription)")
             }else if let resp = response{
@@ -52,7 +52,7 @@ class MainViewController: UIViewController {
     
     @objc private func handlePullToRefresh(_ refreshControl: UIRefreshControl){
         // Do any additional setup after loading the view, typically from a nib.
-        Dribble.sharedInstance.getShots(page: 0) { (error, response) in
+        Dribbble.sharedInstance.getShots(page: 0) { (error, response) in
             if let err = error{
                 print("\(err.localizedDescription)")
             }else if let resp = response{
@@ -75,6 +75,17 @@ class MainViewController: UIViewController {
             })
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailsSegue" {
+            if let vc = segue.destination as? ShotDetailsViewController {
+                if let index = self.tableView.indexPathForSelectedRow?.row{
+                    let selected = shots[index]
+                    vc.id = selected.id
+                }
+            }
+        }
+    }
 }
 
 //MARK: UITableViewDataSource
@@ -86,6 +97,7 @@ extension MainViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCellIdentifier", for: indexPath) as! CustomTableViewCell
         let shot = shots[indexPath.row]
+        cell.id = shot.id
         cell.title.text = shot.title
         cell.count.text = "\(shot.viewsCount ?? 0)"
         cell.createdAt.text = shot.createdAt?.toString
@@ -97,6 +109,8 @@ extension MainViewController: UITableViewDataSource{
 
 //MARK: UITableViewDelegate
 extension MainViewController: UITableViewDelegate{
-   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "DetailsSegue", sender: self)
+    }
 }
 

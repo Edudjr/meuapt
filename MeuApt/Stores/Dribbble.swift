@@ -9,8 +9,8 @@
 import Foundation
 import Alamofire
 
-class Dribble{
-    static let sharedInstance = Dribble()
+class Dribbble{
+    static let sharedInstance = Dribbble()
     private let baseUrl = "https://api.dribbble.com/v1"
     private let accessToken = "5452fcb062e021e062102ae94e15f3a6b5c728c8d9af2a5cb16a411c49bad99c"
     private let perPage = 30
@@ -52,6 +52,24 @@ class Dribble{
                 completion(nil, shotsArray)
             }
         }
+    }
+    
+    public func getShot(byId id: Int, completion: @escaping(CustomError?, ShotModel?)->Void){
+        let path = "/shots/\(id)?access_token=\(accessToken)"
+        let url = baseUrl+path
         
+        Alamofire.request(url).responseJSON { response in
+            print("\nRequest: \(String(describing: response.request))")
+            
+            if let error = self.handleError(response.response?.statusCode){
+                Logging.debug(String(describing: response.response))
+                completion(error, nil)
+            }
+            
+            if let json = response.result.value as? [String:Any]{
+                let shot = ShotModel(object: json)
+                completion(nil, shot)
+            }
+        }
     }
 }
